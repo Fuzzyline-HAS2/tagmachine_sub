@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#line 1 "c:\\Users\\HAS1\\Desktop\\BBangJun\\Final_Code\\tagmachine_sub\\tagmachine_sub.ino"
+#line 1 "c:\\Users\\HAS1\\Desktop\\BBangJun\\HAS2_Final_Code\\tagmachine_sub\\tagmachine_sub.ino"
  ;/**
  * @file Done_ItemBox_code.ino
  * @author 김병준 (you@domain.com)
@@ -13,19 +13,19 @@
 
 #include "tagmachine_sub.h"
 
-#line 14 "c:\\Users\\HAS1\\Desktop\\BBangJun\\Final_Code\\tagmachine_sub\\tagmachine_sub.ino"
+#line 14 "c:\\Users\\HAS1\\Desktop\\BBangJun\\HAS2_Final_Code\\tagmachine_sub\\tagmachine_sub.ino"
 void setup();
-#line 41 "c:\\Users\\HAS1\\Desktop\\BBangJun\\Final_Code\\tagmachine_sub\\tagmachine_sub.ino"
+#line 41 "c:\\Users\\HAS1\\Desktop\\BBangJun\\HAS2_Final_Code\\tagmachine_sub\\tagmachine_sub.ino"
 void loop();
-#line 2 "c:\\Users\\HAS1\\Desktop\\BBangJun\\Final_Code\\tagmachine_sub\\rfid.ino"
+#line 2 "c:\\Users\\HAS1\\Desktop\\BBangJun\\HAS2_Final_Code\\tagmachine_sub\\rfid.ino"
 void RfidInit();
-#line 19 "c:\\Users\\HAS1\\Desktop\\BBangJun\\Final_Code\\tagmachine_sub\\rfid.ino"
+#line 19 "c:\\Users\\HAS1\\Desktop\\BBangJun\\HAS2_Final_Code\\tagmachine_sub\\rfid.ino"
 void RfidLoopMain(void);
-#line 1 "c:\\Users\\HAS1\\Desktop\\BBangJun\\Final_Code\\tagmachine_sub\\timer.ino"
+#line 1 "c:\\Users\\HAS1\\Desktop\\BBangJun\\HAS2_Final_Code\\tagmachine_sub\\timer.ino"
 void TimerInit();
-#line 6 "c:\\Users\\HAS1\\Desktop\\BBangJun\\Final_Code\\tagmachine_sub\\timer.ino"
+#line 6 "c:\\Users\\HAS1\\Desktop\\BBangJun\\HAS2_Final_Code\\tagmachine_sub\\timer.ino"
 void GameTimerFunc();
-#line 14 "c:\\Users\\HAS1\\Desktop\\BBangJun\\Final_Code\\tagmachine_sub\\tagmachine_sub.ino"
+#line 14 "c:\\Users\\HAS1\\Desktop\\BBangJun\\HAS2_Final_Code\\tagmachine_sub\\tagmachine_sub.ino"
 void setup() {
     Serial.begin(115200);
     fromSubSerial.begin(9600, SERIAL_8N1, HWSERIAL_RX, HWSERIAL_TX);
@@ -68,9 +68,9 @@ void loop() {
     RfidLoopMain(); 
 }
 
-#line 1 "c:\\Users\\HAS1\\Desktop\\BBangJun\\Final_Code\\tagmachine_sub\\Game_system.ino"
+#line 1 "c:\\Users\\HAS1\\Desktop\\BBangJun\\HAS2_Final_Code\\tagmachine_sub\\Game_system.ino"
 
-#line 1 "c:\\Users\\HAS1\\Desktop\\BBangJun\\Final_Code\\tagmachine_sub\\rfid.ino"
+#line 1 "c:\\Users\\HAS1\\Desktop\\BBangJun\\HAS2_Final_Code\\tagmachine_sub\\rfid.ino"
 
 void RfidInit()
 {
@@ -113,7 +113,7 @@ void RfidLoopMain(void)
     }
 }
 
-#line 1 "c:\\Users\\HAS1\\Desktop\\BBangJun\\Final_Code\\tagmachine_sub\\timer.ino"
+#line 1 "c:\\Users\\HAS1\\Desktop\\BBangJun\\HAS2_Final_Code\\tagmachine_sub\\timer.ino"
 void TimerInit(){
     gameTimerId = GameTimer.setInterval(1500,GameTimerFunc);
     // GameTimer.disable(gameTimerId);

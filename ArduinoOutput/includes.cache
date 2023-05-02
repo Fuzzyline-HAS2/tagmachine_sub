@@ -10,27 +10,27 @@
     "Includepath": "C:\\Users\\HAS1\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.4\\variants\\esp32c3"
   },
   {
-    "Sourcefile": "c:\\Users\\HAS1\\Desktop\\BBangJun\\Final_Code\\tagmachine_sub\\ArduinoOutput\\sketch\\tagmachine_sub.ino.cpp",
+    "Sourcefile": "c:\\Users\\HAS1\\Desktop\\BBangJun\\HAS2_Final_Code\\tagmachine_sub\\ArduinoOutput\\sketch\\tagmachine_sub.ino.cpp",
     "Include": "Adafruit_PN532.h",
     "Includepath": "C:\\Users\\HAS1\\Documents\\Arduino\\libraries\\Adafruit_PN532"
   },
   {
-    "Sourcefile": "c:\\Users\\HAS1\\Desktop\\BBangJun\\Final_Code\\tagmachine_sub\\ArduinoOutput\\sketch\\tagmachine_sub.ino.cpp",
+    "Sourcefile": "c:\\Users\\HAS1\\Desktop\\BBangJun\\HAS2_Final_Code\\tagmachine_sub\\ArduinoOutput\\sketch\\tagmachine_sub.ino.cpp",
     "Include": "Adafruit_SPIDevice.h",
     "Includepath": "C:\\Users\\HAS1\\Documents\\Arduino\\libraries\\Adafruit_BusIO"
   },
   {
-    "Sourcefile": "c:\\Users\\HAS1\\Desktop\\BBangJun\\Final_Code\\tagmachine_sub\\ArduinoOutput\\sketch\\tagmachine_sub.ino.cpp",
+    "Sourcefile": "c:\\Users\\HAS1\\Desktop\\BBangJun\\HAS2_Final_Code\\tagmachine_sub\\ArduinoOutput\\sketch\\tagmachine_sub.ino.cpp",
     "Include": "SPI.h",
     "Includepath": "C:\\Users\\HAS1\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.4\\libraries\\SPI\\src"
   },
   {
-    "Sourcefile": "c:\\Users\\HAS1\\Desktop\\BBangJun\\Final_Code\\tagmachine_sub\\ArduinoOutput\\sketch\\tagmachine_sub.ino.cpp",
+    "Sourcefile": "c:\\Users\\HAS1\\Desktop\\BBangJun\\HAS2_Final_Code\\tagmachine_sub\\ArduinoOutput\\sketch\\tagmachine_sub.ino.cpp",
     "Include": "SimpleTimer.h",
     "Includepath": "C:\\Users\\HAS1\\Documents\\Arduino\\libraries\\SimpleTimer"
   },
   {
-    "Sourcefile": "c:\\Users\\HAS1\\Desktop\\BBangJun\\Final_Code\\tagmachine_sub\\ArduinoOutput\\sketch\\tagmachine_sub.ino.cpp",
+    "Sourcefile": "c:\\Users\\HAS1\\Desktop\\BBangJun\\HAS2_Final_Code\\tagmachine_sub\\ArduinoOutput\\sketch\\tagmachine_sub.ino.cpp",
     "Include": "",
     "Includepath": null
   },

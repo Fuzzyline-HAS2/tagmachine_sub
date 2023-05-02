@@ -1,4 +1,4 @@
-# 1 "c:\\Users\\HAS1\\Desktop\\BBangJun\\Final_Code\\tagmachine_sub\\tagmachine_sub.ino"
+# 1 "c:\\Users\\HAS1\\Desktop\\BBangJun\\HAS2_Final_Code\\tagmachine_sub\\tagmachine_sub.ino"
  ;/**
 
  * @file Done_ItemBox_code.ino
@@ -18,8 +18,8 @@
  *
 
  */
-# 12 "c:\\Users\\HAS1\\Desktop\\BBangJun\\Final_Code\\tagmachine_sub\\tagmachine_sub.ino"
-# 13 "c:\\Users\\HAS1\\Desktop\\BBangJun\\Final_Code\\tagmachine_sub\\tagmachine_sub.ino" 2
+# 12 "c:\\Users\\HAS1\\Desktop\\BBangJun\\HAS2_Final_Code\\tagmachine_sub\\tagmachine_sub.ino"
+# 13 "c:\\Users\\HAS1\\Desktop\\BBangJun\\HAS2_Final_Code\\tagmachine_sub\\tagmachine_sub.ino" 2
 
 void setup() {
     Serial.begin(115200);
@@ -62,8 +62,8 @@ void loop() {
     }
     RfidLoopMain();
 }
-# 1 "c:\\Users\\HAS1\\Desktop\\BBangJun\\Final_Code\\tagmachine_sub\\Game_system.ino"
-# 1 "c:\\Users\\HAS1\\Desktop\\BBangJun\\Final_Code\\tagmachine_sub\\rfid.ino"
+# 1 "c:\\Users\\HAS1\\Desktop\\BBangJun\\HAS2_Final_Code\\tagmachine_sub\\Game_system.ino"
+# 1 "c:\\Users\\HAS1\\Desktop\\BBangJun\\HAS2_Final_Code\\tagmachine_sub\\rfid.ino"
 
 void RfidInit()
 {
@@ -105,7 +105,7 @@ void RfidLoopMain(void)
         }
     }
 }
-# 1 "c:\\Users\\HAS1\\Desktop\\BBangJun\\Final_Code\\tagmachine_sub\\timer.ino"
+# 1 "c:\\Users\\HAS1\\Desktop\\BBangJun\\HAS2_Final_Code\\tagmachine_sub\\timer.ino"
 void TimerInit(){
     gameTimerId = GameTimer.setInterval(1500,GameTimerFunc);
     // GameTimer.disable(gameTimerId);
