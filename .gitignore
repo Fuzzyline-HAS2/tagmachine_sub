@@ -1,0 +1,4 @@
+build/
+secrets.h
+scripts/secrets.py
+__pycache__/

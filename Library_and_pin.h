@@ -6,6 +6,7 @@
 #include <Adafruit_PN532.h>
 #include <HardwareSerial.h>
 #include <SimpleTimer.h>
+#include <Update.h>  // TTGO가 UART로 릴레이하는 펌웨어를 자체 OTA 파티션에 기록하기 위함 (ota.ino)
 
 #define PN532_SCK   4
 #define PN532_MISO  6
