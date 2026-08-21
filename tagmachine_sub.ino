@@ -1,5 +1,5 @@
  ;/**
- * @file HAS1_tagmachine_sub.ino
+ * @file tagmachine_sub.ino
  * @author 김병준 (you@domain.com)
  * @brief
  * @version 1.0
@@ -14,7 +14,7 @@
 // 올라간 version.txt와 비교되므로, 배포할 때마다(scripts/deploy.py) 이 숫자를 올려야
 // TTGO가 업데이트를 인식한다.
 #define FIRMWARE_VER 2
-#include "HAS1_tagmachine_sub.h"
+#include "tagmachine_sub.h"
 
 void setup() {
     Serial.begin(115200);

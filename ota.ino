@@ -3,7 +3,7 @@
 // ---------------------------------------------------------------------------------
 // TTGO 메인보드가 UART로 릴레이하는 펌웨어를 받아 Update.h(ESP32 OTA 파티션)로
 // 흘려 넣는 수신부. Beetle은 자체 WiFi가 없어 GitHub에서 직접 받을 수 없으므로,
-// TTGO가 GitHub Release(HAS1_tagmachine_sub 태그)에서 다운로드 + HMAC-SHA256 서명
+// TTGO가 GitHub Release(tagmachine_sub 태그)에서 다운로드 + HMAC-SHA256 서명
 // 검증까지 마친 바이트를 그대로 이 UART로 흘려보낸다 — 여기서는 진위를 다시 검증하지
 // 않고 TTGO를 신뢰한다(둘 다 기기 내부에 유선으로만 연결된 사설 링크이기 때문).
 //
@@ -13,10 +13,10 @@
 // 반드시 HAS1_tagmachine_main/beetle_ota.ino의 정의와 동기화해서 유지할 것.
 //
 // 0xA5는 평소 오가는 텍스트 명령('W'/'R'/'V'/'D:'.../태그데이터)의 첫 글자로는 절대
-// 나오지 않는 값이라, HAS1_tagmachine_sub.ino의 loop()에서 peek()만으로 안전하게
+// 나오지 않는 값이라, tagmachine_sub.ino의 loop()에서 peek()만으로 안전하게
 // OTA 세션 진입 여부를 판별할 수 있다.
 //
-// SOF/TYPE/크기 상수는 HAS1_tagmachine_sub.h에 정의되어 있다(이유는 그 헤더의 주석 참고).
+// SOF/TYPE/크기 상수는 tagmachine_sub.h에 정의되어 있다(이유는 그 헤더의 주석 참고).
 // =================================================================================
 
 static uint16_t OtaCrc16Step(uint16_t crc, uint8_t b) {

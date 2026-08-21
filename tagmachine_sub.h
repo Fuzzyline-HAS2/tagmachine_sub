@@ -1,5 +1,5 @@
-#ifndef _HAS1_TAGMACHINE_SUB_
-#define _HAS1_TAGMACHINE_SUB_
+#ifndef _TAGMACHINE_SUB_
+#define _TAGMACHINE_SUB_
 
 #include "Library_and_pin.h"
 const int rfid_num = 3; // 설치된 pn532의 개수
@@ -29,13 +29,13 @@ bool ApplyGain(int mode);
 
 //****************************************OTA (TTGO 경유 UART 릴레이) SETUP****************************************************************
 // Beetle(ESP32-C3)은 자체 WiFi가 없어 GitHub에서 직접 OTA를 받을 수 없다. 대신 TTGO가
-// GitHub Release(HAS1_tagmachine_sub 태그)에서 다운로드 + HMAC-SHA256 서명 검증까지 마친
+// GitHub Release(tagmachine_sub 태그)에서 다운로드 + HMAC-SHA256 서명 검증까지 마친
 // 펌웨어를 이 UART로 그대로 릴레이해주면, 여기서는 받은 바이트를 Update.h에 흘려 넣기만
 // 한다(서명 재검증은 하지 않음 — 물리적으로 기기 내부에 유선 연결된 사설 링크라 TTGO를 신뢰).
 // 반드시 HAS1_tagmachine_main/beetle_ota.ino의 정의와 동기화해서 유지할 것.
 // (SOF/TYPE 상수를 ota.ino가 아니라 여기 두는 이유: Arduino는 .ino 탭들을 병합할 때
 //  메인 스케치 파일을 가장 앞에, 나머지 탭은 알파벳 순으로 그 뒤에 붙이므로 — Game_system.ino,
-//  ota.ino, rfid.ino, timer.ino 순 — HAS1_tagmachine_sub.ino의 loop()가 참조하는 OTA_SOF1이
+//  ota.ino, rfid.ino, timer.ino 순 — tagmachine_sub.ino의 loop()가 참조하는 OTA_SOF1이
 //  ota.ino의 #define보다 먼저 나와 컴파일 에러가 난다. #define은 함수와 달리 자동
 //  프로토타입 생성 대상이 아니라서 반드시 먼저 병합되는 헤더에 있어야 한다.)
 #define OTA_SOF1 0xA5
